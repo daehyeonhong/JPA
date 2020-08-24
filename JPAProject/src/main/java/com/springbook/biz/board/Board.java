@@ -14,16 +14,19 @@ import javax.persistence.TemporalType;
 @Entity /* VO에 @Entity Annotation 설정시 속성 중 @Id Annotation을 가진 속성이 존재해야 함 */
 @Table(name = "UrBoard") /* Object, Relation(Table) Mapping */
 @SequenceGenerator(name = "board_seq", /* SEQUENCE Generator 이름 */
-					sequenceName = "board_seq", /* DB_SEQUENCE_NAME */
-					initialValue = 1, /* 시작 값 */
-					allocationSize = 1) /* 메모리 할당 사이즈 */
+sequenceName = "board_seq", /* DB_SEQUENCE_NAME */
+initialValue = 1, /* 시작 값 */
+allocationSize = 1) /* 메모리 할당 사이즈 */
 public class Board implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
 	/* 속성 */
 	@Id /* Key Annotation */
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "board_seq") /* 자동생성 Annotation */
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "board_seq") /*
+																					 * 자동생성
+																					 * Annotation
+																					 */
 	private int seq;
 	private String title, writer, content;
 	@Temporal(TemporalType.DATE)
@@ -31,8 +34,7 @@ public class Board implements Serializable {
 	private int cnt;
 
 	/* Constructor */
-	public Board() {
-	}
+	public Board() {}
 
 	public int getSeq() {
 		return seq;
