@@ -1,0 +1,4 @@
+SELECT*FROM board;
+RENAME board TO board0821;
+SELECT*FROM board0821;
+select*from myboard;

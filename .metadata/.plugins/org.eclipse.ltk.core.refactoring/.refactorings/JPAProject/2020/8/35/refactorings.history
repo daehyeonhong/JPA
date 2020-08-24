@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;App.java&apos; to &apos;com.springbook.biz.board.Board.java&apos;&#x0D;&#x0A;- Original project: &apos;JPAProject&apos;&#x0D;&#x0A;- Destination element: &apos;com.springbook.biz.board.Board.java&apos;&#x0D;&#x0A;- Original element: &apos;com.springbook.biz.App.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src\/main\/java&lt;com.springbook.biz.board{Board.java" element1="/src\/main\/java&lt;com.springbook.biz{App.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1598235848985" units="1" version="1.0"/>
+</session>

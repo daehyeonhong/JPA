@@ -1,0 +1,10 @@
+package com.springbook.biz.board;
+
+/*JPA Board_Test*/
+public class BoardServiceClient {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,84 @@
+package com.springbook.biz.board;
+
+import java.io.Serializable;
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+@Entity /* VO에 어노테이션 설정시 속성 중 @Id 어노테이션을 가진 속성이 존재해야 함 */
+
+public class Board implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
+	/* 속성 */
+	@Id
+	private int seq;
+	private String title, writer, content;
+	@Temporal(TemporalType.DATE)
+	private Date regDate;
+	private int cnt;
+
+	/* Constructor */
+	public Board() {
+		super();
+	}
+
+	public int getSeq() {
+		return seq;
+	}
+
+	public void setSeq(int seq) {
+		this.seq = seq;
+	}
+
+	public int getCnt() {
+		return cnt;
+	}
+
+	public void setCnt(int cnt) {
+		this.cnt = cnt;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getWriter() {
+		return writer;
+	}
+
+	public void setWriter(String writer) {
+		this.writer = writer;
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+
+	public Date getRegDate() {
+		return regDate;
+	}
+
+	public void setRegDate(Date regDate) {
+		this.regDate = regDate;
+	}
+
+	@Override
+	public String toString() {
+		return "Board [seq=" + seq + ", ctn=" + ctn + ", title=" + title + ", writer=" + writer + ", content=" + content
+				+ ", regDate=" + regDate + "]";
+	}
+
+}
