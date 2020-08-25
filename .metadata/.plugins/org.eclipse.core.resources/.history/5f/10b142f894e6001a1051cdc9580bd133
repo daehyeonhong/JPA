@@ -1,0 +1,43 @@
+package com.springbook.biz.board.impl;
+
+import java.util.List;
+
+import javax.persistence.*;
+import org.springframework.stereotype.Repository;
+
+import com.springbook.biz.BoardVO;
+
+@Repository
+public class BoardDAOJPA {
+	@PersistenceContext
+	private EntityManager entityManager;
+
+	public void insertBoard(BoardVO vo) {
+
+	}
+
+	public void updateBoard(BoardVO vo) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void deleteBoard(BoardVO vo) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public BoardVO getBoard(BoardVO vo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<BoardVO> getBoardList(BoardVO vo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void updateBoardCount(BoardVO vo) {
+		// TODO Auto-generated method stub
+		
+	}
+}

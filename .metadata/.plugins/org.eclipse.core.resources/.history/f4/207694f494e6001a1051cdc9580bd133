@@ -1,0 +1,10 @@
+package com.springbook.biz.board.impl;
+
+import javax.persistence.*;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class BoardDAOJPA {
+	@PersistenceContext
+	private EntityManager entityManager;
+}

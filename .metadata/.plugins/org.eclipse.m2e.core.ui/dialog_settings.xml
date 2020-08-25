@@ -44,6 +44,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\WorkSpace\JPA\JPAUserProject"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -56,14 +57,16 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.springbook.biz.user"/>
 			<item value="com.springbook.biz"/>
+			<item value="com.springbook.biz.user"/>
 		</list>
 		<list key="groupId">
+			<item value="com.springbook.biz"/>
 			<item value="com.springbook.biz.user"/>
 			<item value="com.springbook.biz.board"/>
 		</list>
 		<list key="artifactId">
+			<item value="JPAUser02Project"/>
 			<item value="JPAUserProject"/>
 			<item value="JPAProject"/>
 		</list>

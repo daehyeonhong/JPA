@@ -1,0 +1,12 @@
+package com.springbook.biz;
+
+import javax.persistence.*;
+
+public class User02ServiceClient {
+
+	public static void main(String[] args) {
+		/* EntityManagerFactory 생성 */
+		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("JPAUser02Project");
+	}
+
+}

@@ -1,0 +1,24 @@
+package com.springbook.biz.board;
+
+import java.util.List;
+import com.springbook.biz.BoardVO_BACK;
+
+public interface BoardService {
+	/* CRUD 기능 Method */
+	/* 글 등록 */
+	void insertBoard(BoardVO_BACK vo);
+
+	/* 글 수정 */
+	void updateBoard(BoardVO_BACK vo);
+
+	/* 글 삭제 */
+	void deleteBoard(BoardVO_BACK vo);
+
+	/* 글 상세 조회 */
+	BoardVO_BACK getBoard(BoardVO_BACK boardVO);
+
+	/* 글 목록 조회 */
+	List<BoardVO_BACK> getBoardList(BoardVO_BACK vo);
+
+	void updateBoardCount(BoardVO_BACK vo);
+}

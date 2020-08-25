@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="JPAUser02Project">
+		<class>com.springbook.biz.UserVO</class>
+		<properties>
+			<!-- 필수 속성 -->
+			<property name="javax.persistence.jdbc.driver" value="oracle.jdbc.driver.OracleDriver" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@127.0.0.1:1521:xe" />
+			<property name="javax.persistence.jdbc.user" value="hr" />
+			<property name="javax.persistence.jdbc.password" value="hr" />
+			<!-- 연결할 DBMS에 맞는 SQL을 생성 객체 속성 -->
+			<property name="hibernate.dialect" value="org.hibernate.dialect.OracleDialect" />
+			<!-- 옵션 -->
+		</properties>
+	</persistence-unit>
+</persistence>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- sql-map-config.xml에서 typeAlias 해놨으니까 user == com.springbook.biz.user.UserVO -->
+<mapper namespace="UserDAO">
+
+	<!-- 회원 정보 조회 -->
+	<select id="getUser" parameterType="user" resultType="com.springbook.biz.user.UserVO">
+		<![CDATA[
+			SELECT*FROM users WHERE id=#{id} AND password=#{password}
+		]]>
+	</select>
+
+	<!-- 회원가입 -->
+	<insert id="registerUser" parameterType="user">
+		<![CDATA[
+			INSERT INTO users VALUES(#{id},#{password},#{name},#{role})
+		]]>
+	</insert>
+
+	<!-- 권한 조회 -->
+	<select id="getRoles" resultType="role">
+		<![CDATA[
+			SELECT*FROM roles
+		]]>
+	</select>
+
+	<!-- 회원정보 수정 -->
+	<update id="updateUser" parameterType="user">
+		<![CDATA[
+			UPDATE users SET name=#{name},password=#{password},role=#{role} WHERE id=#{id}
+		]]>
+	</update>
+
+	<delete id="deleteUser" parameterType="java.lang.String">
+		<![CDATA[
+			DELETE users WHERE id=#{id}
+		]]>
+	</delete>
+
+</mapper>

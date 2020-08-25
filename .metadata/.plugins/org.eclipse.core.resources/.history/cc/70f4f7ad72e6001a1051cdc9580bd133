@@ -1,0 +1,9 @@
+package com.springbook.biz;
+
+public class User02ServiceClient {
+
+	public static void main(String[] args) {
+
+	}
+
+}
