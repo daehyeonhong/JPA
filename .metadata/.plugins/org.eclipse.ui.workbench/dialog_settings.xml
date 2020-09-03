@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialogSettings">
-		<item value="651" key="DIALOG_X_ORIGIN"/>
-		<item value="8" key="DIALOG_Y_ORIGIN"/>
+		<item key="DIALOG_X_ORIGIN" value="651"/>
+		<item key="DIALOG_Y_ORIGIN" value="8"/>
 	</section>
 	<section name="org.eclipse.ui.preferences.keysPreferencePage">
-		<item value="true" key="actionSetFilter"/>
-		<item value="true" key="uncategorizedFilter"/>
-		<item value="true" key="internalFilter"/>
+		<item key="actionSetFilter" value="true"/>
+		<item key="uncategorizedFilter" value="true"/>
+		<item key="internalFilter" value="true"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="767" key="dialogHeight"/>
-		<item value="1440" key="dialogWidth"/>
+		<item key="dialogHeight" value="767"/>
+		<item key="dialogWidth" value="1440"/>
 		<list key="textEntries">
 		</list>
 		<list key="orderedElements">
@@ -22,20 +22,20 @@
 		</list>
 	</section>
 	<section name="NewWizardAction">
-		<item value="org.eclipse.datatools.sqltools.internal.sqlscrapbook.wizards.NewSQLScrapbookFileCreationWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.datatools.sqltools.internal.sqlscrapbook.wizards.NewSQLScrapbookFileCreationWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.eclipse.datatools.sql"/>
 		</list>
 	</section>
 	<section name="InstallationDialogSettings">
-		<item value="706" key="DIALOG_WIDTH"/>
-		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
-		<item value="744" key="DIALOG_HEIGHT"/>
-		<item value="-10" key="DIALOG_X_ORIGIN"/>
-		<item value="-155" key="DIALOG_Y_ORIGIN"/>
+		<item key="DIALOG_WIDTH" value="706"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+		<item key="DIALOG_HEIGHT" value="744"/>
+		<item key="DIALOG_X_ORIGIN" value="-10"/>
+		<item key="DIALOG_Y_ORIGIN" value="-155"/>
 	</section>
 	<section name="ImportExportAction">
-		<item value="org.eclipse.ui.wizards.import.ExternalProject" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.ui.wizards.import.ExternalProject"/>
 		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
 			<item value="org.eclipse.ui.Basic"/>
 		</list>
